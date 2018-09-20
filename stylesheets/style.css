@@ -1,0 +1,89 @@
+/* CSS Document */
+
+/*================================
+
+Basic Structure
+
+================================*/
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin: 20px auto;
+}
+#header {
+	height: 100px;
+}
+#sidebar {
+	float: left;
+	width: 300px;
+}
+#content {
+	float: right;
+	width: 600px;
+}
+#footer {
+	clear: both;
+}
+/*================================
+
+Colors and Fonts
+color.adobe.com
+
+#45BAFF
+#3FD6E8
+#52FFE2
+#3FE89C
+#45FF77
+
+================================*/
+body {
+	
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #52FFE2;
+	background-color: #3FE89C;
+	background-image: url("../images/Galaxy_Background.jpg");
+	
+}
+
+#header, #content, #sidebar, #footer {
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 8px;
+	border-color: grey;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/*=====================
+
+Responsive Design
+
+====================*/
+@media screen and (max-width: 980px) {
+	
+}
+@media screen and (max-width: 700px) {
+	
+}
+@media screen and (max-width: 480px) {
+	
+}
+/* Phones */
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 568px) {
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

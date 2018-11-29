@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>6.5 - Google Maps</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	var distance = prompt("how far you destination");
+	var speed = prompt("what you speed");
+	
+	// calculate how long it will take here
+	var time = parseInt((distance / speed) * 60);
+	document.write("Time:" + Math.floor(time/60) + "hour(s)" + (time % 60) + "minutes")
+</script>
+</body>
+</html>

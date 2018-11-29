@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>6.9 - BMI Calculator</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	// get user input in inches and pounds
+	var weight = prompt("What is your weight?");
+	var height = prompt("What is your height?");
+	var kilo = parseInt(weight) * 0.45359236;
+	var metre = parseInt(height) * 0.0254;
+	// calculate BMI
+	var bmi = kilo/ (metre * metre);
+	
+	// print it like so:
+	/*
+	Height: 5' 8"
+	Weight: 148
+	BMI: 22.5
+	*/
+	document.write("Weight:" + weight + "<br>");
+	document.write("Height:"  + Math.floor(parseInt(height) / 12) + " " + (parseInt(height) % 12) + "<br>");
+	document.write("BMI:" + bmi );
+</script>
+</body>
+</html>

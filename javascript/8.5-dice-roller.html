@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.5 - Dice Roller</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		function diceRoller() {
+			// calculate roll
+			var chicken = 0;
+			var oneeeee = 0;
+			var twooooo = 0;
+			var threeee = 0;
+			var fourrrr = 0;
+			var fiveeee = 0;
+			var sixxxxx = 0;
+			function dice() {
+				var th = Math.ceil(Math.random()*6);
+				return th;
+			}
+
+
+			// return result
+
+		} // end function
+		while(chicken <=100) {
+			var currrentroll = dice();
+			document.write(currrentroll + " ");
+			if (currrentroll == 1){
+				++timesOne;
+			}
+			else if (currrentroll == 2){
+				++timesTwo;
+			}
+			else if (currrentroll == 3){
+				++timesThree;
+			}
+			else if (currrentroll == 4){
+				++timesFour;
+			}
+			else if (currrentroll == 5){
+				++timesFive;
+			}
+			else {
+				++timesSix;
+			}
+			+timesRolled;
+		}
+		document.write("<br>" + "Times one was rolled" + timesOne);
+		document.write("<br>" + "Times two was rolled" + timesTwo);
+		document.write("<br>" + "Times three was rolled" + timesThree);
+		document.write("<br>" + "Times four was rolled" + timesFour);
+		document.write("<br>" + "Times five was rolled" + timesFive);
+		document.write("<br>" + "Times six was rolled" + timesSix);
+
+	}
+	</script>
+</body>
+</html>

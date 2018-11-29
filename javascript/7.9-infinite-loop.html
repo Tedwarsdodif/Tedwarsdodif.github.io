@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7.9 - Infinite Loop</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		while(true){
+	var dollar = prompt("How much moola do you have?");
+	
+	// convert dollar to yen
+	var yen = (dollar * 112.53);
+	document.write("How much yen you ask? " + yen + "<br>");
+		// make it loop until the user is done entering temperatures/dollar amounts
+		
+			var more_moolas = confirm("Do you want to enter another number of moolas?");
+		if( !more_moolas ){
+			break; //end loop
+			}
+		}
+	</script>
+</body>
+</html>

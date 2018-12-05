@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.6 - Rock, Paper, Scissors</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+	var rpsWin = 0;
+		function compare(player, computer) {
+			if(player == computer) {
+				alert("you got tiesiessss");
+		} else if(player == 1 && computer != 2) {
+			alert("you won stop bragging :( :)");
+			++rpsWin
+		} else if(player == 2 && computer != 3) {
+			alert("you won stop bragging :( :)");
+			++rpsWin
+		} else if(player == 3 && computer != 1) {
+			alert("you won stop bragging :( :)");
+			++rpsWin
+		}
+		else {
+			alert("hahahahaha, you losttttttttttt noooooooooooooobbbbbbbbb");
+		}
+
+		}
+
+
+		// call function
+		while (true) {
+			var c = Math.ceil(Math.random()*3);
+			var p = prompt("Enter 1 for Rock, 2 for Paper, or 3 for Scissors.").toLowerCase();
+			alert("Computer chose, " + c);
+
+
+		compare(p, c);
+			var moretim = confirm("do you wants to play agains")
+			if(!moretim) {
+				break;
+			}
+
+	}
+	document.write("You won: " + rpsWin);
+	</script>
+</body>
+</html>

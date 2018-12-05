@@ -7,26 +7,22 @@
 
 <body>
 	<script type="text/javascript">
-		function diceRoller() {
+	function dice() {
+		var th = Math.ceil(Math.random()*6);
+		return th;
+	}
+	function diceRoller() {
 			// calculate roll
-			var chicken = 0;
-			var oneeeee = 0;
-			var twooooo = 0;
-			var threeee = 0;
-			var fourrrr = 0;
-			var fiveeee = 0;
-			var sixxxxx = 0;
-			function dice() {
-				var th = Math.ceil(Math.random()*6);
-				return th;
-			}
+			var timesOne = 0;
+			var timesTwo = 0;
+			var timesThree = 0;
+			var timesFour = 0;
+			var timesFive = 0;
+			var timesSix = 0;
 
-
-			// return result
-			var chicken = 1;
-		 // end function
-		while(chicken <=100) {
+		 for( var counter = 1; counter <= 100; counter++){
 			var currrentroll = dice();
+			document.write(" " + currrentroll);
 
 			if (currrentroll == 1){
 				timesOne++;
@@ -46,15 +42,17 @@
 			else {
 				timesSix++;
 			}
-			timesRolled++;
 		}
-		document.write("<br>" + "Times one was rolled" + timesOne);
-		document.write("<br>" + "Times two was rolled" + timesTwo);
-		document.write("<br>" + "Times three was rolled" + timesThree);
+		// print result
+		document.write("<br>" + "Times one was rolled " + timesOne);
+		document.write("<br>" + "Times two was rolled " + timesTwo);
+		document.write("<br>" + "Times three was rolled " + timesThree);
 		document.write("<br>" + "Times four was rolled" + timesFour);
 		document.write("<br>" + "Times five was rolled" + timesFive);
 		document.write("<br>" + "Times six was rolled" + timesSix);
 
+}	// end function
+ diceRoller();
 	</script>
 </body>
 </html>
